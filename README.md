@@ -1,31 +1,43 @@
-# alx_html_css
+# SmileSchool Website
 
-# Simple Responsive Web Layout with HTML & CSS
+This is a responsive website for SmileSchool, a platform for learning how to smile professionally.
 
-This project showcases a basic responsive website layout using only HTML and CSS (no frameworks or libraries). It includes two pages: a homepage and a tweets page, and demonstrates Flexbox for layout, basic responsive design, and HTML fundamentals.
+## Features
 
----
+- Modern, clean design based on Figma specifications
+- Responsive layout
+- Interactive elements
+- Font Awesome icons integration
+- Custom typography with Source Sans Pro and Coiny fonts
 
-## 📁 Files Included
+## Technologies Used
 
-- `index.html`: Main landing page containing an introduction, image, and a sample table.
-- `tweets.html`: A page embedding a sample tweet.
-- `base.css`: A base stylesheet containing font imports, reset styles, and default styling.
-- `styles.css`: Custom styles implementing layout with Flexbox and additional visual customization.
+- HTML5
+- CSS3
+- Font Awesome (for icons)
+- Source Sans Pro and Coiny fonts
 
----
+## Installation
 
-## 🚀 Features
+1. Clone this repository
+2. Ensure all images are placed in the `images` folder
+3. Install the required fonts (Source Sans Pro and Coiny) on your system
+4. Open `index.html` in your browser
 
-- Responsive layout using CSS Flexbox
-- Viewport meta tag for mobile optimization
-- Webfonts imported from Google Fonts
-- Semantic HTML elements: `<article>`, `<aside>`, `<header>`, `<footer>`, and `<main>`
-- Unicode character used as a logo (`⚙`) in the header
-- Embedded external content (tweet)
-- Clean, readable code structure
+## Project Structure
 
----
+- `index.html` - Main HTML file
+- `styles.css` - Main stylesheet
+- `images/` - Folder containing all project images
 
-## 🖥️ Layout Structure
+## Design Notes
 
+- The design was implemented based on the provided Figma file
+- All measurements and colors match the Figma specifications
+- The layout is responsive and adapts to different screen sizes
+
+## Credits
+
+- Font Awesome for icons
+- Google Fonts for Source Sans Pro
+- Coiny font for the logo
