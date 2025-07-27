@@ -14,8 +14,9 @@ body {
 header {
     background-color: #071629;
     position: relative;
-    height: 893px;
+    min-height: 100vh;
     overflow: hidden;
+    padding-bottom: 150px;
 }
 
 /* Gradient overlay */
@@ -32,6 +33,7 @@ header::before {
     z-index: 1;
 }
 
+/* Background image */
 header::after {
     content: '';
     position: absolute;
@@ -80,6 +82,7 @@ nav ul li a {
     margin-top: 180px;
 }
 
+
 .banner h1 {
     color: white;
     font-size: 120px;
@@ -115,10 +118,12 @@ nav ul li a {
 /* Pros Section */
 .pros {
     text-align: center;
-    margin-top: 300px;
     position: relative;
     z-index: 2;
+    margin-top: 100px;
+    padding-bottom: 100px;
 }
+
 
 .pros h2 {
     font-size: 32px;
