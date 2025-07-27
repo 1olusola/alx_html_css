@@ -484,3 +484,165 @@ footer p {
     opacity: 0.35;
     font-size: 12px;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    nav, .quote, .videos, .membership, .faq, footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .pros-grid, .membership-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        min-height: auto;
+        padding-bottom: 80px;
+    }
+
+    .banner h1 {
+        font-size: 80px;
+    }
+
+    .pros-grid, .videos-grid, .membership-grid {
+        flex-wrap: wrap;
+    }
+
+    .pros-item, .video-card, .membership-item {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .faq-grid {
+        gap: 50px;
+    }
+
+    .faq-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav, .quote, .videos, .membership, .faq, footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .banner {
+        padding-top: 100px;
+    }
+
+    .banner h1 {
+        font-size: 60px;
+    }
+
+    .banner-words {
+        gap: 40px;
+    }
+
+    .quote {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .quote img {
+        margin: 0 auto;
+    }
+
+    .video-card, .membership-item {
+        width: 100%;
+    }
+
+    .faq h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav, .quote, .videos, .membership, .faq, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner h1 {
+        font-size: 48px;
+    }
+
+    .banner-words {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pros-item {
+        width: 100%;
+    }
+
+    .video-thumbnail {
+        height: 200px;
+    }
+
+    .membership-grid {
+        gap: 30px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile Navigation */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .banner button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .quote {
+        padding: 50px 20px;
+    }
+
+    .quote img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .quote-content blockquote,
+    .quote-content h3,
+    .quote-content p {
+        font-size: 18px;
+    }
+
+    .videos, .membership, .faq {
+        padding: 50px 20px;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+}
