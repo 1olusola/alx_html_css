@@ -1,0 +1,23 @@
+/* Flex container for vertical layout */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex container for horizontal layout between article and aside */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Allocate space: article gets 2 parts, aside gets 1 part */
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
