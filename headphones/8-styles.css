@@ -1,7 +1,7 @@
 /* ========== BASE IMPORT FROM TASK 7 ========== */
 @import url("7-styles.css");
 
-/* ========== HAMBURGER (mobile only) ========== */
+/* === Hamburger (mobile only) === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -12,19 +12,21 @@
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 20;
+  transition: transform 0.3s ease;
 }
 .hamburger__line {
   width: 100%;
   height: 2px;
   background: #fff;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
 }
 
-/* show hamburger on ≤ 480 px */
+/* === Mobile nav drawer === */
 @media (max-width: 480px) {
   .hamburger { display: flex; }
 
-  /* mobile nav drawer */
   .nav {
     position: absolute;
     top: 100%;
@@ -36,7 +38,7 @@
     transition: max-height 0.3s ease;
   }
   .nav--open {
-    max-height: 200px; /* enough for 3 links */
+    max-height: 200px;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
   }
   .nav__list {
@@ -48,5 +50,16 @@
     display: block;
     text-align: center;
     font-size: 1rem;
+  }
+
+  /* === Hamburger × animation === */
+  .hamburger--open .hamburger__line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger--open .hamburger__line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger--open .hamburger__line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
