@@ -1,0 +1,116 @@
+/* ========== RESET & VARIABLES ========== */
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --clr-primary: #ff6565;
+  --clr-bg-dark: #071629;
+  --clr-bg-light: #ffffff;
+  --clr-text-light: #ffffff;
+  --clr-text-dark: #071629;
+  --max-width: 1000px;
+  --font-main: "Source Sans Pro", sans-serif;
+  --mobile-bp: 480px;
+}
+body { font-family: var(--font-main); line-height: 1.5; }
+
+.container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
+.btn { padding: 0.8125rem 2rem; font-size: 0.875rem; font-weight: 700; color: #fff; background: var(--clr-primary); border: none; border-radius: 22px; cursor: pointer; transition: opacity 0.2s; }
+.btn:hover, .btn:active { opacity: 0.9; }
+
+/* ========== HEADER / HERO / WHAT WE DO (unchanged) ========== */
+.header { position: absolute; top: 0; left: 0; right: 0; padding: 1.75rem 0; z-index: 10; }
+.header .container { display: flex; align-items: center; justify-content: space-between; }
+.logo { display: block; width: 32px; height: 32px; position: relative; }
+.logo__dot { position: absolute; inset: 12px; background: #fff; border-radius: 50%; }
+.nav__list { display: flex; gap: 2rem; list-style: none; }
+.nav a { font-size: 0.75rem; font-weight: 700; color: #fff; text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+.nav a:hover, .nav a:active { color: var(--clr-primary); }
+@media (max-width: 480px) { .nav__list { display: none; } }
+
+.hero { position: relative; display: grid; place-items: center; min-height: 100vh; text-align: center; color: #fff; overflow: hidden; }
+.hero__bg { position: absolute; inset: 0; background: url("https://placehold.co/1400x933") center/cover no-repeat; }
+.hero__bg::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 100% 100% at 50% 0%, rgba(41,48,60,0) 0%, var(--clr-bg-dark) 100%); }
+.hero__content { position: relative; max-width: 637px; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+.hero__title { font-size: 2rem; font-weight: 700; }
+.hero__subtitle { font-size: 1rem; font-weight: 700; }
+.hero__text { font-size: 1rem; font-weight: 400; line-height: 1.625; }
+
+.section { padding: 5rem 0; text-align: center; }
+.what { background: var(--clr-bg-light); color: var(--clr-text-dark); }
+.section__title { font-size: 2rem; font-weight: 600; margin-bottom: 1.25rem; }
+.section__text { max-width: 637px; margin: 0 auto 3rem; font-size: 1rem; line-height: 1.625; }
+
+.features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 1002px; margin: 0 auto; list-style: none; }
+.feature { display: flex; flex-direction: column; align-items: center; max-width: 207px; margin: 0 auto; }
+.feature h3 { margin: 1rem 0 0.5rem; font-size: 1.125rem; font-weight: 600; }
+.feature p  { font-size: 0.875rem; line-height: 1.86; }
+@media (max-width: 768px) { .features { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .features { grid-template-columns: 1fr; } }
+
+/* ========== RESULTS ========== */
+.results {
+  background: var(--clr-bg-dark);
+  color: var(--clr-text-light);
+  position: relative;
+}
+.results::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://placehold.co/1400x1030") center/cover no-repeat;
+  opacity: 0.1;
+}
+.results::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 100% 100% at 0% 0%, rgba(15,25,41,0.47) 0%, var(--clr-bg-dark) 100%);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+
+.pentagon {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  background: var(--clr-primary);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.pentagon:hover { transform: scale(1.05) rotate(2deg); }
+
+.result__number {
+  font-size: 2.875rem; /* 46px */
+  font-weight: 700;
+  line-height: 1;
+}
+.result__label {
+  font-size: 0.875rem;
+  line-height: 1.86;
+  max-width: 110px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .results-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem 2rem; }
+}
+@media (max-width: 480px) {
+  .results-grid { grid-template-columns: 1fr; }
+}
