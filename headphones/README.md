@@ -82,7 +82,7 @@ alx_html_css/
 ## 🧪 Running Locally
 
 ```bash
-git clone https://github.com/<user>/alx_html_css.git
+git clone https://github.com/1olusola/alx_html_css.git
 cd alx_html_css/headphones
 open 8-index.html
 ```
