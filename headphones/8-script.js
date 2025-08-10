@@ -24,3 +24,13 @@ document.addEventListener('keydown', e => {
     hamburger.focus();
   }
 });
+
+/* simple sub-dropdown */
+document.querySelectorAll('.dropdown__toggle').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', !open);
+    btn.parentElement.classList.toggle('dropdown--open');
+  });
+});
