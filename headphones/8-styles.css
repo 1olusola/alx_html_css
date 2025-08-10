@@ -62,4 +62,20 @@
   .hamburger--open .hamburger__line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .dropdown {
+    position: relative;
+  }
+  .dropdown__menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: rgba(0,0,0,.9);
+  }
+  .dropdown--open .dropdown__menu {
+    max-height: 120px;
+  }
+  .nav__list .dropdown__menu a {
+    padding: 0.5rem 0;
+  }
 }
