@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Headphones – Hamburger Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="8-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Spin+Cycle+OT&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER (hamburger added) ===== -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Headphones logo"><span class="logo__dot"></span></a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <!-- Nav -->
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="#">what we do</a></li>
+          <li><a href="#">our results</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__bg"></div>
+    <div class="hero__content container">
+      <h1 id="hero-title">Lorem ipsum dolor set amet lorem ipsum</h1>
+      <p class="hero__subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+      <button class="btn" type="button">CALL TO ACTION</button>
+      <p class="hero__text">Lorem ipsum dolor sit amet…</p>
+    </div>
+  </section>
+
+  <!-- ===== WHAT WE DO ===== -->
+  <section class="section what" aria-labelledby="what-title">
+    <div class="container">
+      <h2 id="what-title">What we do…</h2>
+      <ul class="features">
+        <li class="feature"><span class="icon icon--sound"></span><h3>Lorem ipsum</h3><p>Lorem ipsum…</p></li>
+        <li class="feature"><span class="icon icon--video"></span><h3>Lorem ipsum</h3><p>Lorem ipsum…</p></li>
+        <li class="feature"><span class="icon icon--music"></span><h3>Lorem ipsum</h3><p>Lorem ipsum…</p></li>
+        <li class="feature"><span class="icon icon--hearing"></span><h3>Lorem ipsum</h3><p>Lorem ipsum…</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== OUR RESULTS ===== -->
+  <section class="section results" aria-labelledby="results-title">
+    <div class="container">
+      <h2 id="results-title">Our results speak for themselves</h2>
+      <ul class="results-grid">
+        <li class="result"><div class="pentagon"><span class="result__number">+2%</span><span class="result__label">Lorem ipsum dolor</span></div></li>
+        <li class="result"><div class="pentagon"><span class="result__number">+2%</span><span class="result__label">Lorem ipsum dolor</span></div></li>
+        <li class="result"><div class="pentagon"><span class="result__number">+2%</span><span class="result__label">Lorem ipsum dolor</span></div></li>
+        <li class="result"><div class="pentagon"><span class="result__number">+2%</span><span class="result__label">Lorem ipsum dolor</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT US ===== -->
+  <section class="section contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 id="contact-title">Contact us</h2>
+      <form class="contact__form" action="#" method="post">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+        <div class="field"><label for="message">Your message</label><textarea id="message" name="message" rows="3" required></textarea></div>
+        <button class="btn" type="submit">CALL TO ACTION</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer__logo" aria-label="Headphones logo">
+        <span class="footer__logo-icon"></span>
+        <span class="footer__logo-text">HEAdPHONEs</span>
+      </a>
+      <p class="footer__copyright">©headphones 2020</p>
+    </div>
+  </footer>
+
+  <script src="8-script.js"></script>
+</body>
+</html>
